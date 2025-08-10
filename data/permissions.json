@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "comandante.silva",
+      "name": "Coronel Silva",
+      "rank": "Coronel",
+      "permissions": ["administrador", "coronel", "cursos", "recrutamento", "editais"],
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "username": "cap.santos",
+      "name": "Capitão Santos",
+      "rank": "Capitão",
+      "permissions": ["administrador", "cursos", "recrutamento"],
+      "password": "cap123"
+    },
+    {
+      "id": 3,
+      "username": "sgt.oliveira",
+      "name": "Sargento Oliveira",
+      "rank": "Sargento",
+      "permissions": ["cursos"],
+      "password": "sgt123"
+    },
+    {
+      "id": 4,
+      "username": "cb.costa",
+      "name": "Cabo Costa",
+      "rank": "Cabo",
+      "permissions": ["recrutamento"],
+      "password": "cb123"
+    },
+    {
+      "id": 5,
+      "username": "sd.ferreira",
+      "name": "Soldado Ferreira",
+      "rank": "Soldado",
+      "permissions": ["policial"],
+      "password": "sd123"
+    }
+  ],
+  "roles": {
+    "administrador": {
+      "name": "Administrador",
+      "description": "Acesso completo ao sistema",
+      "permissions": ["read", "write", "delete", "manage_users", "manage_content"]
+    },
+    "coronel": {
+      "name": "Coronel",
+      "description": "Acesso de alto nível",
+      "permissions": ["read", "write", "delete", "manage_content"]
+    },
+    "comissario": {
+      "name": "Comissário",
+      "description": "Acesso administrativo",
+      "permissions": ["read", "write", "manage_content"]
+    },
+    "cursos": {
+      "name": "Gestor de Cursos",
+      "description": "Gerencia cursos e treinamentos",
+      "permissions": ["read", "write_courses"]
+    },
+    "recrutamento": {
+      "name": "Gestor de Recrutamento",
+      "description": "Gerencia processo de recrutamento",
+      "permissions": ["read", "write_recruitment"]
+    },
+    "editais": {
+      "name": "Gestor de Editais",
+      "description": "Gerencia editais e comunicados",
+      "permissions": ["read", "write_editals"]
+    },
+    "policial": {
+      "name": "Policial",
+      "description": "Acesso básico de visualização",
+      "permissions": ["read"]
+    }
+  }
+}
